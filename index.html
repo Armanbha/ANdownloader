@@ -1,1 +1,6 @@
 
+from pathlib import Path
+src = Path("/mnt/data/index_netlify_render_connected-1.html")
+dst = Path("/mnt/data/ANDownloader_full_code.txt")
+dst.write_text(src.read_text(encoding="utf-8"), encoding="utf-8")
+print(
